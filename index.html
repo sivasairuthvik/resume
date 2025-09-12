@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Embed</title>
+  <style>
+    /* Make the whole page white */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: white;
+      font-family: Arial, sans-serif;
+    }
+    
+
+     
+    /* Container to keep iframe full height */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    
+    /* Responsive iframe */
+    iframe {
+      width: 100%;
+      max-width: 900px; /* max width for big screens */
+      height: 100vh;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    
+    @media (max-width: 600px) {
+      iframe {
+        height: 80vh; /* a bit smaller height on mobiles */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Replace the src URL below with your resume file URL -->
+    <iframe src="resume.pdf" title="Resume"></iframe>
+  </div>
+</body>
+</html>
